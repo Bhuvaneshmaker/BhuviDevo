@@ -1,14 +1,14 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://placeholder.supabase.co';
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'placeholder-key';
-
-// Create client with placeholder values if environment variables are not set
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+const supabaseUrl = 'https://xbcfjntpprzmtgpsgvjv.supabase.co'
+const supabaseKey = process.env.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhiY2ZqbnRwcHJ6bXRncHNndmp2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAwNzYxMTUsImV4cCI6MjA2NTY1MjExNX0.BWnNWp3nHqQ_84M0y75SgENfFhP_IcUWMQT61Y_f8AI
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 // Check if we're using placeholder values
+VITE_SUPABASE_URL = "https://xbcfjntpprzmtgpsgvjv.supabase.co"
+
 export const isSupabaseConfigured = () => {
-  return import.meta.env.VITE_SUPABASE_URL && import.meta.env.VITE_SUPABASE_ANON_KEY;
+  return import.meta.env.VITE_SUPABASE_URL && import.meta.env.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhiY2ZqbnRwcHJ6bXRncHNndmp2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAwNzYxMTUsImV4cCI6MjA2NTY1MjExNX0.BWnNWp3nHqQ_84M0y75SgENfFhP_IcUWMQT61Y_f8AI;
 };
 
 export type Database = {
