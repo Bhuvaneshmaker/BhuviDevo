@@ -123,7 +123,7 @@ export default function Footer() {
                   <Phone className="h-4 w-4" />
                 </div>
                 <div>
-                  <p className="text-gray-300">+91 98765 43210</p>
+                  <p className="text-gray-300">+91 63800 66531</p>
                   <p className="text-sm text-gray-400">Mon-Sat 9AM-8PM</p>
                 </div>
               </div>
@@ -132,7 +132,7 @@ export default function Footer() {
                   <Mail className="h-4 w-4" />
                 </div>
                 <div>
-                  <p className="text-gray-300">support@bhuvideo.com</p>
+                  <p className="text-gray-300">bhuvaneshmaker@gmail.com</p>
                   <p className="text-sm text-gray-400">24/7 Email Support</p>
                 </div>
               </div>
@@ -141,7 +141,7 @@ export default function Footer() {
                   <MapPin className="h-4 w-4" />
                 </div>
                 <div>
-                  <p className="text-gray-300">Mumbai, Maharashtra</p>
+                  <p className="text-gray-300">Dharmapuri, Tamil NAdu</p>
                   <p className="text-sm text-gray-400">India</p>
                 </div>
               </div>
