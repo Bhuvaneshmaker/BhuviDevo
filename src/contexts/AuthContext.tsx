@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { User, Session,createCilent } from '@supabase/supabase-js';
+import { User, Session } from '@supabase/supabase-js';
 import { supabase } from '../lib/supabase';
 
 interface AuthContextType {
@@ -10,9 +10,6 @@ interface AuthContextType {
   signUp: (email: string, password: string) => Promise<{ error: any }>;
   signOut: () => Promise<void>;
 }
-const supabaseUrl = 'https://xbcfjntpprzmtgpsgvjv.supabase.co'
-const supabaseKey = process.env.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhiY2ZqbnRwcHJ6bXRncHNndmp2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAwNzYxMTUsImV4cCI6MjA2NTY1MjExNX0.BWnNWp3nHqQ_84M0y75SgENfFhP_IcUWMQT61Y_f8AI
-const supabase = createClient(supabaseUrl, supabaseKey)
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
