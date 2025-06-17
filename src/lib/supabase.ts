@@ -1,15 +1,16 @@
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = 'https://xbcfjntpprzmtgpsgvjv.supabase.co'
-const supabaseKey = process.env.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhiY2ZqbnRwcHJ6bXRncHNndmp2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAwNzYxMTUsImV4cCI6MjA2NTY1MjExNX0.BWnNWp3nHqQ_84M0y75SgENfFhP_IcUWMQT61Y_f8AI
-const supabase = createClient(supabaseUrl, supabaseKey)
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://xbcfjntpprzmtgpsgvjv.supabase.co'
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY ||'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhiY2ZqbnRwcHJ6bXRncHNndmp2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAwNzYxMTUsImV4cCI6MjA2NTY1MjExNX0.BWnNWp3nHqQ_84M0y75SgENfFhP_IcUWMQT61Y_f8AI'
+export const supabase = createClient(supabaseUrl, supabaseAnonKey)
 
 // Check if we're using placeholder values
 VITE_SUPABASE_URL = "https://xbcfjntpprzmtgpsgvjv.supabase.co"
+VITE_SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhiY2ZqbnRwcHJ6bXRncHNndmp2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAwNzYxMTUsImV4cCI6MjA2NTY1MjExNX0.BWnNWp3nHqQ_84M0y75SgENfFhP_IcUWMQT61Y_f8AI'
 
 export const isSupabaseConfigured = () => {
-  return import.meta.env.VITE_SUPABASE_URL && import.meta.env.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhiY2ZqbnRwcHJ6bXRncHNndmp2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAwNzYxMTUsImV4cCI6MjA2NTY1MjExNX0.BWnNWp3nHqQ_84M0y75SgENfFhP_IcUWMQT61Y_f8AI;
-};
+  return import.meta.env.VITE_SUPABASE_URL && import.meta.env.VITE_SUPABASE_ANON_KEY
+    };
 
 export type Database = {
   public: {
