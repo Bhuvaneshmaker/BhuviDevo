@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R A Sastika Shree | 1st Birthday Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Manrope:wght@400;600;700&family=Parisienne&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#fff8f4;--rose:#e788a7;--rose2:#b94d73;--gold:#c8a04d;--wine:#4c2435;--mauve:#6f3857;--soft:#6e5761;--card:rgba(255,255,255,.88);--line:rgba(111,56,87,.13);--shadow:0 20px 50px rgba(111,56,87,.14)}
+    *{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth}
+    body{font-family:Manrope,sans-serif;background:radial-gradient(circle at 10% 10%,rgba(231,136,167,.18),transparent 26%),radial-gradient(circle at 90% 0,rgba(200,160,77,.16),transparent 24%),linear-gradient(180deg,#fffdfa,#fff7f2 35%,var(--bg));color:#2e1c23;overflow-x:hidden}
+    .floating,.burst{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.petal{position:absolute;bottom:-60px;opacity:0;animation:rise linear infinite;filter:drop-shadow(0 8px 14px rgba(111,56,87,.12))}.spark{position:absolute;animation:pop .9s ease-out forwards}
+    @keyframes rise{0%{transform:translateY(0) rotate(0);opacity:0}10%,75%{opacity:.9}100%{transform:translate(var(--dx),-115vh) rotate(var(--rot));opacity:0}} @keyframes pop{0%{transform:translate(-50%,-50%) scale(.5);opacity:1}100%{transform:translate(calc(-50% + var(--x)),calc(-50% + var(--y))) scale(1.25);opacity:0}}
+    .wrap{width:min(1160px,calc(100% - 24px));margin:auto;position:relative;z-index:1}.nav{position:sticky;top:10px;z-index:10;padding:12px 0}.navin{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 18px;border:1px solid rgba(200,160,77,.22);background:rgba(255,255,255,.82);backdrop-filter:blur(14px);border-radius:999px;box-shadow:0 10px 28px rgba(111,56,87,.08)}
+    .brand{font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-weight:700;color:var(--wine)}.links{display:flex;flex-wrap:wrap;gap:18px;justify-content:center}.links a{text-decoration:none;color:var(--mauve);font-size:.82rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700}
+    .btn,.btn2,.filter,.status{border:none;border-radius:999px;cursor:pointer;font-weight:700;letter-spacing:.08em;text-transform:uppercase;transition:.2s}.btn{background:linear-gradient(135deg,var(--mauve),var(--rose2));color:#fff;padding:14px 20px;box-shadow:0 12px 26px rgba(111,56,87,.18)}.btn2,.filter,.status{padding:13px 18px;background:#fff;color:var(--mauve);border:1px solid var(--line)}.btn:hover,.btn2:hover,.filter:hover,.status:hover{transform:translateY(-2px)}
+    .hero,.section,.count{content-visibility:auto;contain-intrinsic-size:1px 800px}.hero{padding:26px 0 18px}.hero-grid,.main-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:24px}.card,.panel{border:1px solid rgba(200,160,77,.18);background:var(--card);backdrop-filter:blur(10px);box-shadow:var(--shadow);border-radius:30px;overflow:hidden}
+    .hero-copy{padding:38px;background:radial-gradient(circle at top right,rgba(255,218,203,.48),transparent 30%),linear-gradient(140deg,rgba(255,255,255,.98),rgba(255,245,240,.92))}.tag{display:inline-block;padding:8px 14px;border-radius:999px;border:1px solid rgba(200,160,77,.25);color:var(--gold);font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px}.sub{font-family:Parisienne,cursive;font-size:2rem;color:var(--rose2);margin-bottom:10px}
+    h1{font-family:"Cormorant Garamond",serif;font-size:clamp(3rem,7vw,5.2rem);line-height:.95;color:var(--wine);margin-bottom:12px}h1 span{color:var(--gold)}.lead{color:var(--soft);line-height:1.85;max-width:58ch;margin-bottom:22px}
+    .pillgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px}.pill{padding:16px;border-radius:22px;background:rgba(255,255,255,.78);border:1px solid rgba(200,160,77,.14)}.pill small{display:block;color:var(--gold);font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;margin-bottom:6px}.pill strong{display:block;color:var(--mauve);line-height:1.5}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}.preview{padding:26px;background:radial-gradient(circle at top left,rgba(231,136,167,.17),transparent 24%),linear-gradient(180deg,rgba(255,255,255,.98),rgba(255,245,240,.94))}.orbit{position:relative;width:min(310px,72vw);aspect-ratio:1;margin:6px auto 18px;display:grid;place-items:center}
+    .orbit:before,.orbit:after{content:"";position:absolute;border-radius:50%;inset:0;border:1px dashed rgba(200,160,77,.55);animation:spin 14s linear infinite}.orbit:after{inset:18px;border-style:solid;border-color:rgba(231,136,167,.18);animation-direction:reverse;animation-duration:10s}@keyframes spin{to{transform:rotate(360deg)}}
+    .frame{width:74%;aspect-ratio:1;border-radius:50%;padding:10px;background:conic-gradient(var(--gold),#f4dfaa,var(--rose),var(--gold));box-shadow:0 16px 30px rgba(111,56,87,.16)}.photo{width:100%;height:100%;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:linear-gradient(135deg,#ffdbe6,#fff2cf);font-size:4rem;color:var(--rose2)}.photo img{width:100%;height:100%;object-fit:cover}
+    .invitebox{padding:24px;border-radius:26px;background:linear-gradient(150deg,rgba(255,255,255,.95),rgba(255,245,240,.92));border:1px solid rgba(200,160,77,.18)}.invitebox h2,.title{font-family:"Cormorant Garamond",serif;color:var(--wine)}.invitebox h2{font-size:2rem;text-align:center;margin-bottom:6px}.invitebox p{color:var(--soft);line-height:1.8;text-align:center}
+    .section{padding:22px 0}.head{text-align:center;margin-bottom:22px}.head span{display:block;color:var(--gold);font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;margin-bottom:10px}.head h2{font-family:"Cormorant Garamond",serif;font-size:clamp(2.2rem,5vw,3.2rem);color:var(--wine);margin-bottom:8px}.head p{color:var(--soft);line-height:1.8;max-width:62ch;margin:auto}
+    .count{padding:28px;background:linear-gradient(135deg,#582a42,#7f4262,#492233);color:#fff}.count h2{font-family:Parisienne,cursive;font-size:2.5rem;color:#ffe7bd;text-align:center}.count p{text-align:center;color:rgba(255,255,255,.82);margin:8px 0 18px;line-height:1.7}.countgrid,.stats,.details{display:grid;gap:16px}.countgrid{grid-template-columns:repeat(4,1fr)}
+    .countbox{padding:18px 10px;border-radius:22px;text-align:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14)}.countbox strong{display:block;font-family:"Cormorant Garamond",serif;font-size:2.7rem;color:#fff0c8}.countbox span{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#f3dbe5;font-weight:700}
+    .details{grid-template-columns:repeat(3,1fr)}.detail{padding:24px}.detail i{display:grid;place-items:center;width:54px;height:54px;border-radius:18px;background:linear-gradient(135deg,rgba(231,136,167,.14),rgba(200,160,77,.14));font-style:normal;font-size:1.5rem;margin-bottom:12px}.detail h3{font-family:"Cormorant Garamond",serif;font-size:1.8rem;color:var(--mauve);margin-bottom:8px}.detail p{line-height:1.8;color:var(--soft)}
+    .locgrid{display:grid;grid-template-columns:.95fr 1.05fr;gap:24px}.qrbox{display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center}.qrframe{width:min(250px,100%);padding:18px;border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(255,243,238,.94));border:1px solid rgba(200,160,77,.18);box-shadow:0 14px 28px rgba(111,56,87,.1)}#qrCode{display:grid;place-items:center;min-height:220px;background:#fff;border-radius:22px;padding:10px}#qrCode img,#qrCode canvas{max-width:100%;height:auto;border-radius:14px}.locaddr{padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.74);border:1px solid rgba(200,160,77,.14);color:var(--soft);line-height:1.75}.mapcard{display:flex;flex-direction:column;gap:14px}.mapframe{overflow:hidden;border-radius:24px;border:1px solid rgba(111,56,87,.1);min-height:320px;background:#fff}.mapframe iframe{display:block;width:100%;height:320px;border:0}.tracepanel{padding:16px 18px;border-radius:20px;background:rgba(255,255,255,.78);border:1px solid rgba(200,160,77,.14)}.tracepanel strong{display:block;color:var(--wine);margin-bottom:6px}.tracepanel p{color:var(--soft);line-height:1.7}.minirow{display:flex;gap:10px;flex-wrap:wrap}.pillnote{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:rgba(231,136,167,.1);color:var(--mauve);font-size:.78rem;font-weight:700}
+    .panel{padding:28px;background:radial-gradient(circle at top left,rgba(255,218,203,.34),transparent 25%),linear-gradient(180deg,rgba(255,255,255,.97),rgba(255,249,246,.93))}.ptitle{margin-bottom:18px}.ptitle h3{font-family:"Cormorant Garamond",serif;font-size:2rem;color:var(--wine)}.ptitle p{color:var(--soft);line-height:1.7}
+    .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.field.full{grid-column:1/-1}label{display:block;margin-bottom:8px;color:var(--mauve);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}input,select,textarea{width:100%;padding:14px 15px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.9);outline:none}input:focus,select:focus,textarea:focus{border-color:rgba(200,160,77,.9);box-shadow:0 0 0 4px rgba(200,160,77,.14)}textarea{min-height:108px;resize:vertical}
+    .statusrow,.toolbar,.filters,.toolactions{display:flex;gap:10px;flex-wrap:wrap}.status.active[data-v=Attending]{background:#e1f7e7;color:#236744;border-color:rgba(35,103,68,.25)}.status.active[data-v=Maybe]{background:#fff3cf;color:#8f6d1b;border-color:rgba(143,109,27,.25)}.status.active[data-v=Declined]{background:#ffe1e8;color:#9d3751;border-color:rgba(157,55,81,.25)}
+    .helper,.note{color:var(--soft);line-height:1.75}.helper{margin-top:12px;font-size:.9rem}.formactions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}.success,.note{margin-top:16px;padding:16px;border-radius:18px}.success{display:none;background:linear-gradient(135deg,#edf9f0,#fff);border:1px solid rgba(73,145,98,.25);color:#2c6845;line-height:1.7}
+    .stats{grid-template-columns:repeat(5,1fr);margin-bottom:18px}.stat{padding:18px;border-radius:22px;background:linear-gradient(160deg,var(--mauve),var(--rose2));color:#fff;box-shadow:0 12px 24px rgba(111,56,87,.15)}.stat strong{display:block;font-family:"Cormorant Garamond",serif;font-size:2rem;color:#ffefc5}.stat span{display:block;margin-top:4px;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.82);font-weight:700}
+    .toolbar{justify-content:space-between;align-items:center;margin-bottom:16px}.search{min-width:230px;flex:1}.search input{border-radius:999px}.tablebox{overflow:auto;border-radius:22px;border:1px solid rgba(111,56,87,.08);background:rgba(255,255,255,.84)}table{width:100%;border-collapse:collapse;min-width:900px}
+    th,td{padding:16px;text-align:left;border-bottom:1px solid rgba(111,56,87,.08);vertical-align:top}th{background:linear-gradient(135deg,var(--wine),var(--mauve));color:#fff;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;position:sticky;top:0}tbody tr:hover{background:rgba(231,136,167,.05)}
+    .gname{font-weight:700;color:var(--wine)} .gtime{font-size:.8rem;color:var(--soft);margin-top:4px}.badge{display:inline-flex;padding:8px 12px;border-radius:999px;font-size:.75rem;font-weight:700;text-transform:uppercase}.badge.attending{background:#e1f7e7;color:#236744}.badge.maybe{background:#fff3cf;color:#8f6d1b}.badge.declined{background:#ffe1e8;color:#9d3751}.wish{max-width:260px;font-style:italic;color:var(--soft);line-height:1.7}.iconbtn{width:40px;height:40px;border-radius:12px;border:1px solid rgba(185,77,115,.2);background:#fff;color:var(--rose2);cursor:pointer}.empty{text-align:center;padding:44px 18px;color:var(--soft);line-height:1.8}
+    .modal{position:fixed;inset:0;background:rgba(46,28,35,.55);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:18px;z-index:20}.modal.open{display:flex}.modalcard{width:min(700px,100%);background:linear-gradient(180deg,rgba(255,255,255,.99),rgba(255,245,240,.96));border-radius:28px;border:1px solid rgba(200,160,77,.2);box-shadow:0 24px 70px rgba(46,28,35,.25)}
+    .mhead{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid rgba(111,56,87,.08)}.mhead h3{font-family:"Cormorant Garamond",serif;font-size:2rem;color:var(--wine)}.close{border:none;background:rgba(111,56,87,.08);width:42px;height:42px;border-radius:50%;cursor:pointer;font-size:1.2rem}.mbody{padding:24px}
+    .invite{padding:30px;border-radius:28px;text-align:center;background:radial-gradient(circle at top left,rgba(255,218,203,.55),transparent 24%),radial-gradient(circle at bottom right,rgba(200,160,77,.2),transparent 22%),linear-gradient(135deg,#fffdfa,#fff4ef);border:1px solid rgba(200,160,77,.18)}.invite .mini{width:108px;aspect-ratio:1;border-radius:50%;padding:6px;background:conic-gradient(var(--gold),#f4dfaa,var(--rose),var(--gold));margin:0 auto 16px}.invite .mini div{width:100%;height:100%;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:linear-gradient(135deg,#ffdbe6,#fff2cf);font-size:2.2rem;color:var(--rose2)}.invite h4{font-family:Parisienne,cursive;font-size:2.5rem;color:var(--rose2)}.invite h5{font-family:"Cormorant Garamond",serif;font-size:2.4rem;color:var(--wine);margin:4px 0 12px}.invite p{line-height:1.8;color:var(--soft)}
+    .meta{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.meta div{padding:14px;border-radius:18px;background:rgba(255,255,255,.84);border:1px solid rgba(200,160,77,.14)}.meta span{display:block;margin-bottom:4px;font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-weight:700}.meta strong{color:var(--wine);line-height:1.5}
+    .toast{position:fixed;right:18px;bottom:18px;z-index:30;background:rgba(76,36,53,.96);color:#fff;padding:14px 18px;border-radius:16px;box-shadow:0 14px 34px rgba(76,36,53,.22);opacity:0;transform:translateY(100px);transition:.25s;max-width:min(420px,calc(100% - 24px));line-height:1.6}.toast.show{opacity:1;transform:translateY(0)}.foot{text-align:center;padding:30px 0 56px;color:var(--soft)}.foot h2{font-family:Parisienne,cursive;font-size:3rem;color:var(--rose2);margin-bottom:6px}
+    @media (prefers-reduced-motion: reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.floating,.burst{display:none}}
+    @media (max-width:1050px){.hero-grid,.main-grid,.locgrid{grid-template-columns:1fr}.details{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(3,1fr)}} @media (max-width:820px){.navin{border-radius:26px;flex-direction:column}.countgrid,.pillgrid,.grid2,.meta,.details{grid-template-columns:1fr 1fr}} @media (max-width:560px){.wrap{width:min(1160px,calc(100% - 16px))}.hero-copy,.preview,.panel,.count,.mbody{padding:18px}.pillgrid,.countgrid,.grid2,.meta,.details,.stats{grid-template-columns:1fr}.actions,.formactions,.toolbar,.filters,.toolactions,.statusrow,.minirow{flex-direction:column;align-items:stretch}.btn,.btn2,.filter,.status{width:100%}.mapframe iframe{height:280px}}
+  </style>
+</head>
+<body>
+  <div class="floating" id="floating"></div>
+  <div class="burst" id="burst"></div>
+  <div class="wrap">
+    <div class="nav">
+      <div class="navin">
+        <div class="brand">R A Sastika Shree Turns One</div>
+        <div class="links">
+          <a href="#home">Home</a><a href="#details">Details</a><a href="#rsvp">RSVP</a><a href="#guests">Guests</a><a href="#setup">Setup</a>
+        </div>
+        <button class="btn" type="button" onclick="go('rsvp')">Confirm Attendance</button>
+      </div>
+    </div>
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <div class="card hero-copy">
+          <div class="tag">1st Birthday Celebration</div>
+          <div class="sub">A day full of smiles, bows and blessings</div>
+          <h1>R A Sastika <span>Shree</span></h1>
+          <p class="lead" id="heroMsg">Join us for a beautiful evening as we celebrate one magical year of love, laughter and precious memories with our little princess.</p>
+          <div class="pillgrid">
+            <div class="pill"><small>Date</small><strong id="heroDate">Choose event date</strong></div>
+            <div class="pill"><small>Time</small><strong id="heroTime">Choose event time</strong></div>
+            <div class="pill"><small>Venue</small><strong id="heroVenue">Add venue below</strong></div>
+          </div>
+          <div class="actions">
+            <button class="btn" type="button" onclick="go('rsvp')">RSVP Now</button>
+            <button class="btn2" type="button" onclick="downloadInvite()">Download Invitation PDF</button>
+            <button class="btn2" type="button" onclick="shareInvite()">Copy Invite Text</button>
+          </div>
+        </div>
+        <div class="card preview">
+          <div class="orbit"><div class="frame"><div class="photo" id="heroPhoto">🎀</div></div></div>
+          <div class="invitebox">
+            <h2>You're Invited</h2>
+            <p id="inviteText">Our family would be delighted to celebrate this special day together with our relatives, family members and loved ones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="details">
+      <div class="card count">
+        <h2>Countdown to the celebration</h2>
+        <p id="countTxt">Choose the birthday date and time to start the live countdown.</p>
+        <div class="countgrid">
+          <div class="countbox"><strong id="d">00</strong><span>Days</span></div>
+          <div class="countbox"><strong id="h">00</strong><span>Hours</span></div>
+          <div class="countbox"><strong id="m">00</strong><span>Minutes</span></div>
+          <div class="countbox"><strong id="s">00</strong><span>Seconds</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="head">
+        <span>Invitation Details</span>
+        <h2>Beautiful, interactive and fully working</h2>
+        <p>This website lets your relatives fill the invitation form, saves the guest database in the browser, counts attending members, and downloads the attendance list as a PDF.</p>
+      </div>
+      <div class="details">
+        <div class="card detail"><i>📅</i><h3>Date & Time</h3><p id="detailDate">Set the birthday date and time in the setup section below.</p></div>
+        <div class="card detail"><i>📍</i><h3>Venue</h3><p id="detailVenue">Add your party hall, home or celebration address.</p></div>
+        <div class="card detail"><i>💌</i><h3>Family Invitation</h3><p id="detailMsg">Your warm invitation message appears across the hero, invitation card and PDF.</p></div>
+      </div>
+    </section>
+    <section class="section" id="location">
+      <div class="head">
+        <span>Location</span>
+        <h2>Scan, view map and trace the venue</h2>
+        <p>Guests can scan the QR code, view the mini map, and trace their current location to the celebration venue for easy travel.</p>
+      </div>
+      <div class="locgrid">
+        <div class="panel qrbox">
+          <div class="ptitle"><h3>Venue QR Code</h3><p>Scan this code to open the birthday location directly in Google Maps.</p></div>
+          <div class="qrframe"><div id="qrCode"></div></div>
+          <div class="locaddr" id="locAddress"></div>
+          <div class="minirow">
+            <button class="btn2" type="button" onclick="openVenueMap()">Open in Google Maps</button>
+            <button class="btn" type="button" onclick="downloadQrCard()">Download QR</button>
+          </div>
+        </div>
+        <div class="panel mapcard">
+          <div class="ptitle"><h3>Mini Map & Directions</h3><p>View the map here or open instant directions from your current place.</p></div>
+          <div class="mapframe">
+            <iframe id="venueMapFrame" title="Venue mini map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="about:blank"></iframe>
+          </div>
+          <div class="minirow">
+            <button class="btn2" type="button" onclick="openVenueMap()">Open Map</button>
+            <button class="btn2" type="button" onclick="openDirections()">Get Directions</button>
+            <button class="btn" type="button" onclick="traceLocation()">Trace My Location</button>
+          </div>
+          <div class="tracepanel">
+            <strong id="traceTitle">Location trace ready</strong>
+            <p id="traceText">Tap "Trace My Location" to calculate your distance to the venue and open navigation. Your location is used only in the browser and is never stored.</p>
+            <div class="pillnote" id="traceDistance">Venue coordinates loading...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="rsvp">
+      <div class="head">
+        <span>RSVP Form</span>
+        <h2>Fill the attendance form</h2>
+        <p>Guests can confirm attendance, tell how many members are coming, and share wishes for Sastika Shree.</p>
+      </div>
+      <div class="main-grid">
+        <div class="panel">
+          <div class="ptitle"><h3>Guest RSVP</h3><p>Every response is saved instantly. Re-entering the same mobile number updates the old RSVP instead of creating a duplicate.</p></div>
+          <form id="rsvpForm" novalidate>
+            <div class="grid2">
+              <div class="field"><label for="gName">Full Name *</label><input id="gName" type="text" maxlength="60" placeholder="Enter full name"></div>
+              <div class="field"><label for="gPhone">Mobile Number *</label><input id="gPhone" type="tel" maxlength="20" placeholder="+91 98765 43210"></div>
+              <div class="field"><label for="gRelation">Relation</label><select id="gRelation"><option value="">Select relation</option><option>Grandparent</option><option>Uncle / Aunt</option><option>Cousin</option><option>Family Friend</option><option>Neighbour</option><option>Colleague</option><option>Other</option></select></div>
+              <div class="field"><label for="gCount">Number of Members *</label><input id="gCount" type="number" min="1" max="50" value="1"></div>
+              <div class="field full"><label>Attendance Status</label><div class="statusrow" id="statusRow"><button class="status active" type="button" data-v="Attending">Attending</button><button class="status" type="button" data-v="Maybe">Maybe</button><button class="status" type="button" data-v="Declined">Declined</button></div></div>
+              <div class="field full"><label for="gWish">Birthday Wishes</label><textarea id="gWish" placeholder="Write lovely wishes for the little one"></textarea></div>
+            </div>
+            <p class="helper">The attending members count in the database is calculated from guests who choose "Attending".</p>
+            <div class="formactions">
+              <button class="btn" type="submit">Confirm My Attendance</button>
+              <button class="btn2" type="button" onclick="resetForm()">Clear Form</button>
+            </div>
+            <div class="success" id="success"></div>
+          </form>
+        </div>
+        <div class="panel">
+          <div class="ptitle"><h3>Live Invitation Card</h3><p>Your baby photo, event details and message update instantly.</p></div>
+          <div class="invite" id="inviteCard">
+            <div class="mini"><div id="miniPhoto">🎀</div></div>
+            <h4>You're invited to celebrate</h4>
+            <h5>R A Sastika Shree</h5>
+            <p id="cardMsg">With joyful hearts, we invite you to be part of our little angel's first birthday celebration.</p>
+            <div class="meta">
+              <div><span>Date</span><strong id="cardDate">To be announced</strong></div>
+              <div><span>Time</span><strong id="cardTime">To be announced</strong></div>
+              <div><span>Venue</span><strong id="cardVenue">To be announced</strong></div>
+            </div>
+          </div>
+          <div class="formactions">
+            <button class="btn2" type="button" onclick="downloadInvite()">Download Invitation PDF</button>
+            <button class="btn2" type="button" onclick="shareInvite()">Share / Copy</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="guests">
+      <div class="head">
+        <span>Guest Database</span>
+        <h2>Attendance count and guest list</h2>
+        <p>Track total RSVPs, attending families, attending members, maybe responses and declined responses. Export the guest list or only the attending list as PDF.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong id="stTotal">0</strong><span>Total RSVPs</span></div>
+        <div class="stat"><strong id="stAttend">0</strong><span>Attending Families</span></div>
+        <div class="stat"><strong id="stMembers">0</strong><span>Attending Members</span></div>
+        <div class="stat"><strong id="stMaybe">0</strong><span>Maybe</span></div>
+        <div class="stat"><strong id="stDeclined">0</strong><span>Declined</span></div>
+      </div>
+      <div class="panel">
+        <div class="toolbar">
+          <div class="filters" id="filters">
+            <button class="filter active" type="button" data-f="all">All</button>
+            <button class="filter" type="button" data-f="Attending">Attending</button>
+            <button class="filter" type="button" data-f="Maybe">Maybe</button>
+            <button class="filter" type="button" data-f="Declined">Declined</button>
+          </div>
+          <div class="toolactions">
+            <div class="search"><input id="search" type="search" placeholder="Search by name, phone, relation"></div>
+            <button class="btn2" type="button" onclick="downloadGuests(false)">Download All PDF</button>
+            <button class="btn" type="button" onclick="downloadGuests(true)">Download Attending PDF</button>
+          </div>
+        </div>
+        <div class="tablebox">
+          <table>
+            <thead><tr><th>#</th><th>Name</th><th>Mobile</th><th>Relation</th><th>Members</th><th>Status</th><th>Wishes</th><th>Delete</th></tr></thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="setup">
+      <div class="head">
+        <span>Admin Setup</span>
+        <h2>Customize the invitation</h2>
+        <p>Add the real date, time, venue, baby photo and message. Everything is saved in the browser and used across the website and PDF downloads.</p>
+      </div>
+      <div class="panel">
+        <div class="ptitle"><h3>Event Settings</h3><p>The setup panel makes this a complete invitation card website for your family and relatives.</p></div>
+        <div class="grid2">
+          <div class="field"><label for="eDate">Event Date</label><input id="eDate" type="date"></div>
+          <div class="field"><label for="eTime">Event Time</label><input id="eTime" type="time"></div>
+          <div class="field full"><label for="eVenue">Venue / Address</label><input id="eVenue" type="text" maxlength="140" placeholder="Sri Mahalakshmi Hall, Hosur, Tamil Nadu"></div>
+          <div class="field full"><label for="eMsg">Invitation Message</label><textarea id="eMsg" placeholder="Write a warm note for family and relatives"></textarea></div>
+          <div class="field full"><label for="ePhoto">Baby Photo</label><input id="ePhoto" type="file" accept="image/*"></div>
+        </div>
+        <div class="formactions">
+          <button class="btn" type="button" onclick="saveSetup()">Save Event Details</button>
+          <button class="btn2" type="button" onclick="removePhoto()">Remove Photo</button>
+        </div>
+        <div class="note">Tip: Use "Download Attending PDF" when you want only confirmed guests for food planning and seating.</div>
+      </div>
+    </section>
+    <footer class="foot"><h2>R A Sastika Shree</h2><p>Celebrating one year of sunshine, joy, blessings and family love.</p></footer>
+  </div>
+  <div class="modal" id="modal">
+    <div class="modalcard">
+      <div class="mhead"><h3>Your Invitation</h3><button class="close" type="button" onclick="closeModal()">x</button></div>
+      <div class="mbody">
+        <div class="invite">
+          <div class="mini"><div id="modalPhoto">🎀</div></div>
+          <h4>Welcome to the celebration</h4>
+          <h5>R A Sastika Shree</h5>
+          <p id="modalMsg">Thank you for responding to our invitation.</p>
+          <p id="modalGuest" style="margin-top:12px;font-weight:700;color:var(--mauve)"></p>
+          <div class="meta">
+            <div><span>Date</span><strong id="modalDate">To be announced</strong></div>
+            <div><span>Time</span><strong id="modalTime">To be announced</strong></div>
+            <div><span>Venue</span><strong id="modalVenue">To be announced</strong></div>
+          </div>
+        </div>
+        <div class="formactions"><button class="btn2" type="button" onclick="downloadInvite()">Download Invitation PDF</button><button class="btn2" type="button" onclick="shareInvite()">Copy Invite Text</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script>
+    const keys={guests:"sastikaGuests",setup:"sastikaSetup"};
+    const venueInfo={lat:12.3182643,lng:78.19582,address:"13/34, Kariamangalam, Karadihalli, Tamil Nadu 635111",shortUrl:"https://maps.app.goo.gl/4hK4UeJMVhC9fU9v7",mapsUrl:"https://www.google.com/maps/search/?api=1&query=12.3182643,78.19582"};
+    const def={date:"",time:"",venue:"13/34, Kariamangalam, Karadihalli, Tamil Nadu 635111",message:"Join us for a beautiful evening as we celebrate one magical year of love, laughter and precious memories with our little princess.",photo:""};
+    let guests=JSON.parse(localStorage.getItem(keys.guests)||"[]");
+    let setup={...def,...JSON.parse(localStorage.getItem(keys.setup)||"{}")};
+    if(!setup.venue)setup.venue=venueInfo.address;
+    let filter="all",status="Attending";
+    const icons=["🌸","💖","🎀","✨","🌷","⭐","🦋"];
+    const $=id=>document.getElementById(id);
+    const esc=s=>String(s).replace(/[&<>\"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+    const fmtDate=v=>v?new Date(v+"T00:00:00").toLocaleDateString("en-IN",{weekday:"long",day:"numeric",month:"long",year:"numeric"}):"To be announced";
+    const fmtTime=v=>{if(!v)return"To be announced";const[a,b]=v.split(":");const h=+a;return`${h%12||12}:${b} ${h>=12?"PM":"AM"}`};
+    const cleanPhone=s=>s.replace(/\s+/g,"").trim();
+    const prefersReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const isSmallScreen=window.matchMedia("(max-width: 768px)").matches;
+    const scriptPromises=new Map();
+    let searchTimer=null;
+    let mapObserver=null;
+    function loadScript(src){if(scriptPromises.has(src))return scriptPromises.get(src);const promise=new Promise((resolve,reject)=>{const script=document.createElement("script");script.src=src;script.async=true;script.onload=resolve;script.onerror=()=>reject(new Error(`Failed to load ${src}`));document.head.appendChild(script);});scriptPromises.set(src,promise);return promise;}
+    async function ensureQrLib(){if(window.QRCode)return;await loadScript("https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js");}
+    async function ensurePdfLibs(){if(!window.jspdf)await loadScript("https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js");if(!(window.jspdf&&window.jspdf.jsPDF&&window.jspdf.jsPDF.API&&window.jspdf.jsPDF.API.autoTable))await loadScript("https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js");}
+    function go(id){$(id).scrollIntoView({behavior:"smooth"})}
+    function toast(msg){const t=$("toast");t.textContent=msg;t.classList.add("show");clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove("show"),3200)}
+    function saveGuests(){localStorage.setItem(keys.guests,JSON.stringify(guests))}
+    function saveSetupStore(){localStorage.setItem(keys.setup,JSON.stringify(setup))}
+    function inviteText(){return[`You're invited to celebrate R A Sastika Shree's 1st Birthday.`,`Date: ${fmtDate(setup.date)}`,`Time: ${fmtTime(setup.time)}`,`Venue: ${setup.venue||venueInfo.address}`,"",setup.message,"","Google Maps:",venueInfo.shortUrl].join("\n")}
+    function venueBox(){return `${venueInfo.lng-0.02}%2C${venueInfo.lat-0.012}%2C${venueInfo.lng+0.02}%2C${venueInfo.lat+0.012}`}
+    function renderSetup(){ $("eDate").value=setup.date;$("eTime").value=setup.time;$("eVenue").value=setup.venue;$("eMsg").value=setup.message;$("heroDate").textContent=fmtDate(setup.date);$("heroTime").textContent=fmtTime(setup.time);$("heroVenue").textContent=setup.venue||"Add venue below";$("heroMsg").textContent=setup.message;$("inviteText").textContent=setup.message;$("cardMsg").textContent=setup.message;$("detailMsg").textContent=setup.message;$("detailDate").textContent=setup.date||setup.time?`${fmtDate(setup.date)}${setup.time?" at "+fmtTime(setup.time):""}`:"Set the birthday date and time in the setup section below.";$("detailVenue").textContent=setup.venue||"Add your party hall, home or celebration address.";$("cardDate").textContent=fmtDate(setup.date);$("cardTime").textContent=fmtTime(setup.time);$("cardVenue").textContent=setup.venue||"To be announced";$("modalDate").textContent=fmtDate(setup.date);$("modalTime").textContent=fmtTime(setup.time);$("modalVenue").textContent=setup.venue||"To be announced";$("modalMsg").textContent=setup.message;$("countTxt").textContent=setup.date?`The celebration begins on ${fmtDate(setup.date)}${setup.time?" at "+fmtTime(setup.time):""}.`:"Choose the birthday date and time to start the live countdown.";$("locAddress").innerHTML=`<strong style="color:var(--wine)">Venue Address</strong><br>${setup.venue||venueInfo.address}<br><span style="font-size:.85rem">Maps link: ${venueInfo.shortUrl}</span>`;$("venueMapFrame").dataset.src=`https://www.openstreetmap.org/export/embed.html?bbox=${venueBox()}&layer=mapnik&marker=${venueInfo.lat}%2C${venueInfo.lng}`;$("traceDistance").textContent=`Venue: ${venueInfo.lat.toFixed(6)}, ${venueInfo.lng.toFixed(5)}`;const photo=setup.photo?`<img src="${setup.photo}" alt="Baby photo of R A Sastika Shree">`:"🎀";$("heroPhoto").innerHTML=photo;$("miniPhoto").innerHTML=photo;$("modalPhoto").innerHTML=photo;scheduleRenderQr();ensureMapObserver();countdown();}
+    function countdown(){if(!setup.date){["d","h","m","s"].forEach(id=>$(id).textContent="00");return}const[tH,tM]=(setup.time||"18:00").split(":");const target=new Date(`${setup.date}T${tH}:${tM}:00`),now=new Date(),diff=target-now;if(diff<=0){["d","h","m","s"].forEach(id=>$(id).textContent="00");return}$("d").textContent=String(Math.floor(diff/86400000)).padStart(2,"0");$("h").textContent=String(Math.floor(diff%86400000/3600000)).padStart(2,"0");$("m").textContent=String(Math.floor(diff%3600000/60000)).padStart(2,"0");$("s").textContent=String(Math.floor(diff%60000/1000)).padStart(2,"0");}
+    function setStatus(v){status=v;document.querySelectorAll(".status").forEach(b=>b.classList.toggle("active",b.dataset.v===v))}
+    function resetForm(){$("rsvpForm").reset();$("gCount").value="1";setStatus("Attending")}
+    function visibleGuests(){const q=$("search").value.trim().toLowerCase();return guests.filter(g=>(filter==="all"||g.status===filter)&&(`${g.name} ${g.phone} ${g.relation} ${g.wish}`.toLowerCase().includes(q)))}
+    function renderTable(){const data=visibleGuests(),body=$("tbody");if(!data.length){body.innerHTML=`<tr><td colspan="8" class="empty">${filter==="all"?"No RSVPs yet. Share the invitation and the guest database will fill here.":`No guests found for ${esc(filter)}.`}</td></tr>`;return}body.innerHTML=data.map((g,i)=>`<tr><td>${i+1}</td><td><div class="gname">${esc(g.name)}</div><div class="gtime">${esc(g.time)}</div></td><td>${esc(g.phone)}</td><td>${esc(g.relation)}</td><td>${g.count}</td><td><span class="badge ${g.status.toLowerCase()}">${esc(g.status)}</span></td><td class="wish">${esc(g.wish==="—"?"With love and blessings.":g.wish)}</td><td><button class="iconbtn" type="button" onclick="delGuest(${g.id})">x</button></td></tr>`).join("")}
+    function stats(){const attend=guests.filter(g=>g.status==="Attending"),maybe=guests.filter(g=>g.status==="Maybe"),declined=guests.filter(g=>g.status==="Declined");$("stTotal").textContent=guests.length;$("stAttend").textContent=attend.length;$("stMembers").textContent=attend.reduce((a,g)=>a+Number(g.count||0),0);$("stMaybe").textContent=maybe.length;$("stDeclined").textContent=declined.length}
+    function submit(e){e.preventDefault();const name=$("gName").value.trim(),mobile=cleanPhone($("gPhone").value),relation=$("gRelation").value||"—",count=Number($("gCount").value),wish=$("gWish").value.trim()||"—";if(name.length<2){toast("Please enter a valid guest name.");$("gName").focus();return}if(mobile.length<7){toast("Please enter a valid mobile number.");$("gPhone").focus();return}if(!Number.isFinite(count)||count<1||count>50){toast("Please enter members count between 1 and 50.");$("gCount").focus();return}const g={id:Date.now(),name,phone:mobile,relation,count,status,wish,time:new Date().toLocaleString("en-IN",{dateStyle:"medium",timeStyle:"short"})};const i=guests.findIndex(x=>cleanPhone(x.phone)===mobile);if(i>=0){g.id=guests[i].id;guests[i]=g}else guests.unshift(g);saveGuests();stats();renderTable();resetForm();$("success").style.display="block";$("success").innerHTML=`<strong>${esc(i>=0?"RSVP updated.":"RSVP received.")}</strong><br>${esc(name)} marked the response as ${esc(status)}.${status==="Attending"?` We have reserved space for ${count} member${count>1?"s":""}.`:" Thank you for your response."}`;$("modalGuest").textContent=status==="Attending"?`${name}, we are excited to welcome ${count} member${count>1?"s":""} from your family.`:status==="Maybe"?`${name}, thank you for your tentative RSVP.`:`${name}, thank you for your response and blessings.`;$("modal").classList.add("open");toast(i>=0?`${name}'s RSVP updated successfully.`:`${name}, your RSVP has been saved.`)}
+    function delGuest(id){const g=guests.find(x=>x.id===id);if(!g)return;if(!confirm(`Remove ${g.name} from the guest database?`))return;guests=guests.filter(x=>x.id!==id);saveGuests();stats();renderTable();toast("Guest entry removed.")}
+    function saveSetup(){setup.date=$("eDate").value;setup.time=$("eTime").value;setup.venue=$("eVenue").value.trim();setup.message=$("eMsg").value.trim()||def.message;const file=$("ePhoto").files[0];if(!file){saveSetupStore();renderSetup();toast("Invitation details saved.");return}const r=new FileReader();r.onload=e=>{setup.photo=e.target.result;saveSetupStore();renderSetup();toast("Invitation details and photo saved.")};r.onerror=()=>toast("Photo could not be loaded. Please try another image.");r.readAsDataURL(file)}
+    function removePhoto(){setup.photo="";$("ePhoto").value="";saveSetupStore();renderSetup();toast("Baby photo removed.")}
+    function closeModal(){$("modal").classList.remove("open")}
+    async function renderQr(){await ensureQrLib();const box=$("qrCode");box.innerHTML="";new QRCode(box,{text:venueInfo.shortUrl,width:isSmallScreen?180:220,height:isSmallScreen?180:220,colorDark:"#6f3857",colorLight:"#ffffff",correctLevel:QRCode.CorrectLevel.H});}
+    function scheduleRenderQr(){requestAnimationFrame(()=>{renderQr().catch(()=>toast("QR code could not be loaded right now."))})}
+    function ensureMapObserver(){if(mapObserver||$("venueMapFrame").src!=="about:blank")return;const loadMap=()=>{const frame=$("venueMapFrame");if(frame&&frame.dataset.src&&frame.src==="about:blank")frame.src=frame.dataset.src};if(!("IntersectionObserver" in window)){loadMap();return}mapObserver=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){loadMap();mapObserver.disconnect();mapObserver=null;}},{rootMargin:"200px"});mapObserver.observe($("venueMapFrame"));}
+    function openVenueMap(){window.open(venueInfo.shortUrl,"_blank","noopener")}
+    function openDirections(origin){const url=origin?`https://www.google.com/maps/dir/?api=1&origin=${origin.lat},${origin.lng}&destination=${venueInfo.lat},${venueInfo.lng}&travelmode=driving`:venueInfo.mapsUrl;window.open(url,"_blank","noopener");}
+    function haversine(lat1,lon1,lat2,lon2){const R=6371,dLat=(lat2-lat1)*Math.PI/180,dLon=(lon2-lon1)*Math.PI/180;const a=Math.sin(dLat/2)**2+Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLon/2)**2;return 2*R*Math.asin(Math.sqrt(a));}
+    function traceLocation(){if(!navigator.geolocation){toast("Geolocation is not supported in this browser.");return}const navWin=window.open("about:blank","_blank");$("traceTitle").textContent="Tracing your location...";$("traceText").textContent="Allow location access to calculate your distance and open directions.";navigator.geolocation.getCurrentPosition(pos=>{const origin={lat:pos.coords.latitude,lng:pos.coords.longitude};const km=haversine(origin.lat,origin.lng,venueInfo.lat,venueInfo.lng);const mins=Math.max(8,Math.round(km*2.4));$("traceTitle").textContent="Location traced successfully";$("traceText").textContent=`You are approximately ${km.toFixed(1)} km from the venue. Estimated drive time is about ${mins} minutes. Google Maps directions will open in a new tab.`;$("traceDistance").textContent=`Current location: ${origin.lat.toFixed(5)}, ${origin.lng.toFixed(5)}`;if(navWin)navWin.location.href=`https://www.google.com/maps/dir/?api=1&origin=${origin.lat},${origin.lng}&destination=${venueInfo.lat},${venueInfo.lng}&travelmode=driving`;else openDirections(origin);},err=>{if(navWin)navWin.close();$("traceTitle").textContent="Location trace unavailable";$("traceText").textContent=err.code===1?"Location permission was denied. You can still open the venue directly in Google Maps.":"Could not detect your current location. Please try again outdoors or with GPS enabled.";$("traceDistance").textContent=`Venue: ${venueInfo.lat.toFixed(6)}, ${venueInfo.lng.toFixed(5)}`;toast("Unable to trace your current location.");},{enableHighAccuracy:true,timeout:10000,maximumAge:0});}
+    async function downloadQrCard(){await ensureQrLib();const qrEl=$("qrCode").querySelector("canvas,img");if(!qrEl){toast("QR code is not ready yet.");return}const canvas=document.createElement("canvas"),ctx=canvas.getContext("2d"),size=700;canvas.width=size;canvas.height=900;ctx.fillStyle="#fff8f4";ctx.fillRect(0,0,canvas.width,canvas.height);ctx.strokeStyle="#c8a04d";ctx.lineWidth=8;ctx.strokeRect(24,24,canvas.width-48,canvas.height-48);ctx.fillStyle="#4c2435";ctx.font="bold 42px serif";ctx.textAlign="center";ctx.fillText("R A Sastika Shree",size/2,88);ctx.fillStyle="#b94d73";ctx.font="28px sans-serif";ctx.fillText("1st Birthday Venue QR",size/2,132);const img=new Image();img.onload=()=>{ctx.fillStyle="#ffffff";ctx.fillRect(150,180,400,400);ctx.drawImage(img,170,200,360,360);ctx.fillStyle="#6f3857";ctx.font="bold 24px sans-serif";ctx.fillText("Scan to open venue location",size/2,620);ctx.fillStyle="#6e5761";ctx.font="22px sans-serif";wrapText(ctx,setup.venue||venueInfo.address,size/2,665,460,30);const link=document.createElement("a");link.href=canvas.toDataURL("image/png");link.download="Sastika_Shree_Venue_QR.png";link.click();toast("Venue QR card downloaded.");};img.src=qrEl.tagName==="CANVAS"?qrEl.toDataURL("image/png"):qrEl.src;}
+    function wrapText(ctx,text,x,y,maxWidth,lineHeight){const words=text.split(" ");let line="",cursor=y;words.forEach((word,idx)=>{const test=`${line}${word} `;if(ctx.measureText(test).width>maxWidth&&idx>0){ctx.fillText(line.trim(),x,cursor);line=`${word} `;cursor+=lineHeight}else line=test;});if(line.trim())ctx.fillText(line.trim(),x,cursor);}
+    async function shareInvite(){const text=inviteText();if(navigator.share){try{await navigator.share({title:"R A Sastika Shree 1st Birthday Invitation",text});toast("Invitation shared.");return}catch(e){if(e.name==="AbortError")return}}try{await navigator.clipboard.writeText(text);toast("Invitation text copied to clipboard.")}catch(e){toast("Copy failed. You can still download the invitation PDF.")}}
+    function header(doc,title,sub){doc.setFillColor(255,248,244);doc.rect(0,0,210,297,"F");doc.setDrawColor(200,160,77);doc.setLineWidth(.8);doc.roundedRect(8,8,194,281,6,6,"S");doc.setLineWidth(.2);doc.roundedRect(12,12,186,273,6,6,"S");doc.setTextColor(185,77,115);doc.setFont("helvetica","italic");doc.setFontSize(18);doc.text("You're invited",105,24,{align:"center"});doc.setTextColor(76,36,53);doc.setFont("times","bold");doc.setFontSize(24);doc.text(title,105,36,{align:"center"});doc.setTextColor(111,56,87);doc.setFont("helvetica","normal");doc.setFontSize(11);doc.text(sub,105,44,{align:"center"});}
+    async function downloadInvite(){await ensurePdfLibs();const {jsPDF}=window.jspdf,doc=new jsPDF({orientation:"portrait",unit:"mm",format:"a4"});header(doc,"R A Sastika Shree's 1st Birthday","A special celebration with family and relatives");doc.setFillColor(255,255,255);doc.roundedRect(24,55,162,154,8,8,"FD");if(setup.photo){try{doc.addImage(setup.photo,"JPEG",78,64,54,54)}catch(e){try{doc.addImage(setup.photo,"PNG",78,64,54,54)}catch(_){}}}else{doc.setFontSize(30);doc.setTextColor(185,77,115);doc.text("🎀",105,96,{align:"center"})}doc.setFont("helvetica","italic");doc.setFontSize(15);doc.setTextColor(111,56,87);doc.text("With love, we invite you to celebrate",105,128,{align:"center"});doc.setFont("times","bold");doc.setFontSize(22);doc.setTextColor(76,36,53);doc.text("R A Sastika Shree",105,140,{align:"center"});doc.setFont("helvetica","normal");doc.setFontSize(11);doc.text(doc.splitTextToSize(setup.message||def.message,124),105,152,{align:"center"});doc.line(42,175,168,175);doc.setFont("helvetica","bold");doc.text(`Date: ${fmtDate(setup.date)}`,105,186,{align:"center"});doc.text(`Time: ${fmtTime(setup.time)}`,105,194,{align:"center"});doc.text(`Venue: ${setup.venue||venueInfo.address}`,105,202,{align:"center"});doc.setFont("helvetica","normal");doc.setFontSize(9);doc.setTextColor(111,56,87);doc.text("Google Maps: "+venueInfo.shortUrl,105,213,{align:"center"});const qrEl=$("qrCode").querySelector("canvas,img");if(qrEl){try{const src=qrEl.tagName==="CANVAS"?qrEl.toDataURL("image/png"):qrEl.src;doc.addImage(src,"PNG",150,224,30,30)}catch(e){}}doc.setFont("helvetica","italic");doc.setTextColor(185,77,115);doc.text("With blessings, love and smiles",80,240,{align:"center"});doc.save("R_A_Sastika_Shree_Invitation.pdf");toast("Invitation PDF downloaded.")}
+    async function downloadGuests(attOnly){await ensurePdfLibs();const rows=attOnly?guests.filter(g=>g.status==="Attending"):[...guests];if(!rows.length){toast(attOnly?"No attending guests yet.":"No guest data available yet.");return}const {jsPDF}=window.jspdf,doc=new jsPDF({orientation:"portrait",unit:"mm",format:"a4"});header(doc,"R A Sastika Shree",attOnly?"Attending Guest Register":"Complete Guest Register");doc.setFont("helvetica","normal");doc.setTextColor(111,56,87);doc.setFontSize(10);doc.text(`Event: ${fmtDate(setup.date)}${setup.time?" | "+fmtTime(setup.time):""}`,105,56,{align:"center"});doc.text(`Venue: ${setup.venue||venueInfo.address}`,105,62,{align:"center"});const attending=guests.filter(g=>g.status==="Attending"),members=attending.reduce((a,g)=>a+Number(g.count||0),0);doc.setFont("helvetica","bold");doc.setTextColor(76,36,53);doc.text(`Total RSVPs: ${guests.length}`,20,74);doc.text(`Attending Families: ${attending.length}`,76,74);doc.text(`Attending Members: ${members}`,190,74,{align:"right"});doc.autoTable({startY:82,head:[["#","Name","Mobile","Relation","Members","Status","Wishes"]],body:rows.map((g,i)=>[i+1,g.name,g.phone,g.relation,g.count,g.status,g.wish==="—"?"":g.wish]),styles:{font:"helvetica",fontSize:8.5,cellPadding:3,textColor:[46,28,35],lineColor:[235,225,228],lineWidth:.1},headStyles:{fillColor:[76,36,53],textColor:[255,255,255],fontStyle:"bold"},alternateRowStyles:{fillColor:[255,247,243]},margin:{left:12,right:12},columnStyles:{0:{cellWidth:10,halign:"center"},1:{cellWidth:32},2:{cellWidth:28},3:{cellWidth:28},4:{cellWidth:17,halign:"center"},5:{cellWidth:24},6:{cellWidth:49}},didParseCell:d=>{if(d.section==="body"&&d.column.index===5){d.cell.styles.textColor=d.cell.raw==="Attending"?[35,103,68]:d.cell.raw==="Maybe"?[143,109,27]:[157,55,81]}}});doc.setFont("helvetica","italic");doc.setFontSize(9);doc.setTextColor(111,56,87);doc.text(`Generated on ${new Date().toLocaleString("en-IN")}`,105,Math.min(doc.lastAutoTable.finalY+12,285),{align:"center"});doc.save(attOnly?"Sastika_Shree_Attending_Guests.pdf":"Sastika_Shree_All_Guests.pdf");toast(attOnly?"Attending guest PDF downloaded.":"Complete guest PDF downloaded.")}
+    function floaters(){const box=$("floating");box.innerHTML="";if(prefersReducedMotion)return;const count=isSmallScreen?14:24;for(let i=0;i<count;i++){const s=document.createElement("span");s.className="petal";s.textContent=icons[Math.floor(Math.random()*icons.length)];s.style.left=`${Math.random()*100}%`;s.style.fontSize=`${12+Math.random()*14}px`;s.style.animationDuration=`${14+Math.random()*12}s`;s.style.animationDelay=`${Math.random()*10}s`;s.style.setProperty("--dx",`${Math.random()*90-45}px`);s.style.setProperty("--rot",`${Math.random()*140-70}deg`);box.appendChild(s);}}
+    function burstFx(x,y){if(prefersReducedMotion||isSmallScreen)return;for(let i=0;i<6;i++){const s=document.createElement("span");s.className="spark";s.textContent=icons[Math.floor(Math.random()*icons.length)];s.style.left=`${x}px`;s.style.top=`${y}px`;s.style.setProperty("--x",`${Math.random()*120-60}px`);s.style.setProperty("--y",`${Math.random()*120-60}px`);$("burst").appendChild(s);setTimeout(()=>s.remove(),920);}}
+    $("rsvpForm").addEventListener("submit",submit);
+    $("statusRow").addEventListener("click",e=>{const b=e.target.closest(".status");if(b)setStatus(b.dataset.v)});
+    $("filters").addEventListener("click",e=>{const b=e.target.closest(".filter");if(!b)return;filter=b.dataset.f;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x.dataset.f===filter));renderTable()});
+    $("search").addEventListener("input",()=>{clearTimeout(searchTimer);searchTimer=setTimeout(renderTable,120)});
+    $("modal").addEventListener("click",e=>{if(e.target.id==="modal")closeModal()});
+    document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+    document.addEventListener("click",e=>{if(e.target.closest("button,input,textarea,select,a,.modalcard"))return;burstFx(e.clientX,e.clientY)},{passive:true});
+    floaters();renderSetup();stats();renderTable();setStatus("Attending");setInterval(countdown,1000);
+    if("requestIdleCallback" in window){requestIdleCallback(()=>ensureQrLib().catch(()=>{}),{timeout:2000});}
+  </script>
+</body>
+</html>
